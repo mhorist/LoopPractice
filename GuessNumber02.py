@@ -6,7 +6,7 @@
 import random
 
 secret_number = random.randrange(1, 10)
-x = (int(secret_number))
+x = (str(secret_number))
 guess = input("Guess a number between 1-10: ")
 guess_count = 0
 guess_limit = 3
