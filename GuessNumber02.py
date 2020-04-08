@@ -19,7 +19,7 @@ while guess != x and guess_count < guess_limit:
     elif guess != x:
         print("Sorry that is not the number")
         guess_count += 1
-        input("Guess another number: ")
+        guess = input("Guess another number: ")
 else:
     print("Out of guesses.")
     print("The secret number is: " + x)
