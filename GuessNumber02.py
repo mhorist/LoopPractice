@@ -6,7 +6,7 @@
 # i am stumped on this one. 
 '''
 If I use secret_number as an int, it won't read it into the guess variable.
-If I convert it to a strong, which i did below, it still won't read it into the guess variable.
+If I convert it to a string, which i did below, it still won't read it into the guess variable.
 my loop keeps saying 'Sorry that is not the number" even if I type the correct number. ugh!
 '''
 
