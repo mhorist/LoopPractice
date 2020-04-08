@@ -8,6 +8,10 @@
 If I use secret_number as an int, it won't read it into the guess variable.
 If I convert it to a string, which i did below, it still won't read it into the guess variable.
 my loop keeps saying 'Sorry that is not the number" even if I type the correct number. ugh!
+
+This is fixed.  I needed to convert the guess variable to an integer correctly.
+Example:  guess = int(input("Enter a number between 1 - 10: ")
+I was using this Incorrect syntax:  guess = input(int("Enter a number....")
 '''
 
 import random
