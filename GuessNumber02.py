@@ -12,23 +12,22 @@ my loop keeps saying 'Sorry that is not the number" even if I type the correct n
 
 import random
 
-secret_number = random.randrange(1, 10)
-x = (str(secret_number))
-guess = input("Guess a number between 1-10: ")
-guess_count = 0
+secret_number = random.randint(1, 10)
+guess = int(input("Guess a number between 1-10: "))
+guess_count = 1
 guess_limit = 3
+print(secret_number)
 
-print(x)
-
-while guess != x and guess_count < guess_limit:
-    if guess == x:
+while guess_count <= guess_limit:
+    if guess == secret_number:
         print("Nice!  You guessed it!")
-    elif guess != x:
+        break
+    elif guess != secret_number:
         print("Sorry that is not the number")
+        guess = int(input("Guess another number: "))
         guess_count += 1
-        guess = input("Guess another number: ")
-else:
-    print("Out of guesses.")
-    print("The secret number is: " + x)
+    else:
+        print("Sorry you are out of guesses.")
+
 
 
