@@ -26,8 +26,8 @@ while guess_count <= guess_limit:
         print("Sorry that is not the number")
         guess = int(input("Guess another number: "))
         guess_count += 1
-    else:
-        print("Sorry you are out of guesses.")
+else:
+    print("Sorry you are out of guesses.")
 
 
 
